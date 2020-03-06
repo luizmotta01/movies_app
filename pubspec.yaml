@@ -62,7 +62,9 @@ flutter:
     #         style: italic
     - family: Barlow
       fonts:
-        - asset: fonts/barlow/Barlow-Light.ttf
+        - asset: fonts/barlow/Barlow-Regular.ttf
+          # - asset: fonts/barlow/Barlow-Light.ttf
+          # - asset: fonts/barlow/Barlow-SemiBold.ttf
           weight: 700
   #
   # For details regarding fonts from package dependencies,
