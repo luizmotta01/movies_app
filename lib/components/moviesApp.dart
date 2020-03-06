@@ -7,7 +7,10 @@ class MoviesApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'CDM Movies',
-        theme: ThemeData(primaryColor: Colors.blue),
-        home: Container(color: Colors.blue));
+        theme: ThemeData(primaryColor: Colors.blue, fontFamily: 'Barlow'),
+        home: Scaffold(
+          appBar: AppBar(title: Text('Movies'), centerTitle: true),
+          body: Container(color: Colors.white),
+        ));
   }
 }
