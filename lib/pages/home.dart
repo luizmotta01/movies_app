@@ -1,7 +1,11 @@
-import 'package:flutter/cupertino.dart';
+import '../components/body.dart';
 import 'package:flutter/material.dart';
 
-class MoviesApp extends StatelessWidget {
+class Home extends StatelessWidget {
+  const Home({
+    Key key,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,15 +20,7 @@ class MoviesApp extends StatelessWidget {
             title: Text('Movies'),
             centerTitle: true,
           ),
-          body: Container(
-              color: Colors.white,
-              child: Text('In Theaters',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'Barlow',
-                    fontSize: 24,
-                    fontWeight: FontWeight.normal,
-                  ))),
+          body: Body(),
         ));
   }
 }
